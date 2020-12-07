@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>简历</title>
+</head>
+<body>
+  <style id="style"></style>
+  <div id="html"></div>
+  <style>
+    * {margin: 0;padding: 0;box-sizing: border-box;}
+    *::before {box-sizing: border-box};
+    *::after {box-sizing: border-box}
+
+    #html {
+      word-break: break-all;
+    }
+    #div1 {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+    #div1::before {
+    
+     content: "";
+     position: absolute;
+    }
+    #div1::after {
+     content: "";
+     position: absolute;
+
+    }
+    @media(max-width:600px){
+      #html {
+        height: 40vh;
+        overflow: auto;
+      }
+      #div1 {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-left:  auto;
+        margin-right:  auto;
+
+      }
+      #divWrapper {
+        height: 60vh;
+      }
+    }
+  </style>
+<div id="div1Wrapper">
+  <div id="div1"></div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
